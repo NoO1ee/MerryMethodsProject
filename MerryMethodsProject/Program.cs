@@ -17,18 +17,7 @@ internal class Program
         string? input = Console.ReadLine();
         method.SecondMethod(input!);
 
-
-
-
-
-
-        
-
         method.ThirdMethod(input!, Reply());
-        
-
-
-
 
         Console.Write("\nType in a question. [S] is Upper case and [W] is lower case: ");
         string? question = Console.ReadLine();
@@ -41,7 +30,6 @@ internal class Program
         else if (check2 == "s")
             method.ThirdMethod(input!, true);
 
-
         bool shout = method.FourthMethod();
         method.ThirdMethod(input!, shout);
         method.ThirdMethod(input!, method.FourthMethod());
@@ -52,8 +40,6 @@ internal class Program
             Console.WriteLine($"{sixth.Name} is a long name");
         else
             Console.WriteLine($"{sixth.Name} is not a long name");
-
-
     }
 
     static bool Reply()
